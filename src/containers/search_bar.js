@@ -16,9 +16,18 @@ class SearchBar extends Component {
     this.setState({ term: event.target.value })
   }
 
+  // To prevent the form to make a default post request and refresh the page when clicking the search button
+  // Using form elements for inputs is easier because you don't have to setup an event handler for when the user press the button or press the enter key
+  onFormSubmit(event) {
+    event.preventDefault()
+  }
+
   render() {
     return (
-      <form className="input-group">
+      <form
+        onSubmit={ this.onFormSubmit }
+        className="input-group"
+      >
         <input
           placeholder="Get a five-day forecast in your favorite cities"
           className="form-control"
