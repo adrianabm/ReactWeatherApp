@@ -1,4 +1,7 @@
 import React, { Component } from 'react'
+import { connect } from 'react-redux'
+import { bindActionCreators } from 'redux'
+import { fetchWeather } from '../actions/index'
 
 class SearchBar extends Component {
   constructor(props) {
@@ -8,6 +11,7 @@ class SearchBar extends Component {
 
     // Callback function that references a function with "this" needs to bind to the context
     this.onInputChange = this.onInputChange.bind(this)
+    this.onFormSubmit = this.onFormSubmit.bind(this)
   }
 
   // all DOM event handlers (onChange, onClick, onHover...) come along with the (event) object.
@@ -20,6 +24,12 @@ class SearchBar extends Component {
   // Using form elements for inputs is easier because you don't have to setup an event handler for when the user press the button or press the enter key
   onFormSubmit(event) {
     event.preventDefault()
+
+    // Fetch weather data
+    this.props.fetchWeather(this.state.term)
+
+    // Clear form after search is made
+    this.setState({ term: '' })
   }
 
   render() {
@@ -42,4 +52,8 @@ class SearchBar extends Component {
   }
 }
 
-export default SearchBar
+function mapDispatchToProps(dispatch) {
+  return bindActionCreators({ fetchWeather }, dispatch)
+}
+
+export default connect(null, mapDispatchToProps)(SearchBar)
