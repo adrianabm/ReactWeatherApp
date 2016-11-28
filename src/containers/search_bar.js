@@ -16,7 +16,6 @@ class SearchBar extends Component {
 
   // all DOM event handlers (onChange, onClick, onHover...) come along with the (event) object.
   onInputChange(event) {
-    console.log(event.target.value)
     this.setState({ term: event.target.value })
   }
 
