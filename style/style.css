@@ -1,3 +1,14 @@
-td {
-  width: 180px
+.input-group {
+  margin: 30px 0px;
+}
+
+td, th {
+  text-align: center !important;
+  vertical-align: middle !important;
+  width: 180px;
+}
+
+td:first-of-type {
+  height: 200px;
+  width: 250px
 }
