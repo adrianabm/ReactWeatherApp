@@ -1,25 +1,30 @@
-# ReduxSimpleStarter
+# Weather App (React & Redux)
 
-Interested in learning [Redux](https://www.udemy.com/react-redux/)?
 
-###Getting Started###
+## About 
+Five Day Weather Forecast Application using React-Redux. It was built following the course [Modern React with Redux](https://www.udemy.com/react-redux/).
 
-There are two methods for getting started with this repo.
+This app is using OpenWeatherMap API and GoogleMaps API. 
 
-####Familiar with Git?#####
-Checkout this repo, install dependencies, then start the gulp process with the following:
+## This project is using:
+* React.js
+* Redux
+* react-promise
+* react-axios
+* [react-sparklines](https://github.com/borisyankov/react-sparklines)
+* [react-google-maps](https://github.com/tomchentw/react-google-maps)
 
-```
-	> git clone git@github.com:StephenGrider/ReduxSimpleStarter.git
-	> cd ReduxSimpleStarter
-	> npm install
-	> npm start
-```
+## Getting Started
 
-####Not Familiar with Git?#####
-Click [here](https://github.com/StephenGrider/ReactStarter/releases) then download the .zip file.  Extract the contents of the zip file, then open your terminal, change to the project directory, and:
+1. Clone the repository and enter the project directory
+2. Install all dependencies
 
-```
-	> npm install
-	> npm start
-```
+  ```
+  npm instal
+  ```
+  
+2. Run the application - it should be available on http://localhost:8080
+  ```
+  npm start
+  ```
+
