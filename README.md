@@ -1,6 +1,6 @@
 # Weather App (React & Redux)
 
-![weather-app](https://cloud.githubusercontent.com/assets/20054414/21609038/71b43e8a-d1c0-11e6-9ba5-4a7026f97061.gif)
+![weather-app](https://cloud.githubusercontent.com/assets/20054414/21609091/b2eb1716-d1c0-11e6-94fd-be56ecd6b1f6.gif)
 
 ## About 
 Five Day Weather Forecast Application using React-Redux. It was built following the course [Modern React with Redux](https://www.udemy.com/react-redux/).
